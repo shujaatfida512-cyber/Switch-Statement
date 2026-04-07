@@ -1,9 +1,12 @@
+// Start of program
 #include <iostream>
 using namespace std;
 
+//Global Variables
 int majorcode;
 string MajorName, QuotaStatus;
 
+//Function to take input from user
 void input()
 {
     cout<< "=== campus major registration ===" << endl;
@@ -14,6 +17,7 @@ void input()
     cin>> majorcode;
 }
 
+// Function to select major based on input
 void selectmajor()
 {
    switch (majorcode)
@@ -38,6 +42,7 @@ void selectmajor()
 
 }
 
+// Function to display result
 void output()
 {
    cout<< "\n=== Selection Result ===" << endl;
@@ -53,3 +58,4 @@ int main()
     
     return 0;
 }
+// end program
