@@ -2,7 +2,7 @@
 using namespace std;
 
 int majorcode;
-string MajorName, qoutastatus;
+string MajorName, QuotaStatus;
 
 void input()
 {
@@ -20,19 +20,19 @@ void selectmajor()
    {
     case 1:
         MajorName = "Information technology";
-        qoutastatus = "Available (15 seats)";
+        QuotaStatus = "Available (15 seats)";
         break;
     case 2:
         MajorName = "Electrical engineering";
-        qoutastatus = "Qouta Full!";
+        QuotaStatus = "Qouta Full!";
         break;
     case 3:
         MajorName = "Information System";
-        qoutastatus = "Available (5 seats)";
+        QuotaStatus = "Available (5 seats)";
         break;
     default:
         MajorName = "Unknown";
-        qoutastatus = "Error: Invalid Major Code";
+        QuotaStatus = "Error: Invalid Major Code";
         break;
    }
 
@@ -42,7 +42,7 @@ void output()
 {
    cout<< "\n=== Selection Result ===" << endl;
    cout<< "Major Name:" << MajorName << endl;
-   cout<< "Qouta Status: " << qoutastatus << endl;
+   cout<< "Qouta Status: " << QuotaStatus << endl;
    cout<< "----------------" << endl;
 }
 int main()
